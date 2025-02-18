@@ -3,9 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frencoin</title>
+  <link rel="stylesheet" href="./index.css">
+  <title>Crypto Tracker</title>
 </head>
+<nav>
+  <h1>Crypto Tracker</h1>
+</nav>
 <body>
+  <h2>Select crypto to track:</h2>
+  <select id="list">
+    <option value="90">Bitcoin</option>
+    <option value="80">Ethereum</option>
+    <option value="58">Ripple</option>
+    <option value="48543">Solana</option>
+   <option value="2">Dogecoin</option>
+  </select>
+
+<!--BEGIN MY CRYPTO TRACKING WIDGET-->
+  <h3 id="cryptoHeader"></h3>
+  <p id="cryptoPriceUSD"></p>
+  <p id="crypto1hChange"></p>
+  <p id="crypto24hChange"></p>
+  <p id="crypto7dChange"></p>
+  <p id="crypto24hVolume"></p>
+  <p id="cryptoTotalSupply"></p>
+  <p id="cryptoCirculatingSupply"></p>
+  <p id="cryptoMaxSupply"></p>
 
 </body>
+  <!--Script needs to be placed after "select crypto to track" instead of in the head so the event handler for select crypto is loaded after HTML is rendered on page-->
+  <script type="text/javascript" src="./index.js"></script>
 </html>
+
+
