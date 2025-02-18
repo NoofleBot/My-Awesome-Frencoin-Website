@@ -18,7 +18,6 @@ changeCrypto();
 
 function makeAPIlink(){
     apiLink = (`https://api.coinlore.net/api/ticker/?id=${this.value}`);
-    console.log(apiLink);
     changeCrypto();
 }
 document.getElementById('list').onchange = makeAPIlink;
