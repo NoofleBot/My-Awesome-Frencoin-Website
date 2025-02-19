@@ -36,15 +36,15 @@ async function changeCrypto() {
     crypto1hChange.textContent = (`1 Hour Percent Change: ${json[0].percent_change_1h}%`);
     crypto24hChange.textContent = (`1 Day Percent Change: ${json[0].percent_change_24h}%`);
     crypto7dChange.textContent = (`1 Week Percent Change: ${json[0].percent_change_7d}%`);
-    crypto24hVolume.textContent = (`1 Day Volume Traded: ${Math.round(json[0].volume24)}`);
-    cryptoTotalSupply.textContent = (`Total Supply: ${Math.round(json[0].tsupply)}`);
+    crypto24hVolume.textContent = (`1 Day Volume Traded: ${(Math.round(json[0].volume24)).toLocaleString('en')} ${json[0].symbol}`);
+    cryptoTotalSupply.textContent = (`Total Supply: ${(Math.round(json[0].tsupply)).toLocaleString('en')} ${json[0].symbol}`);
 
     //MAKES CIRCULATING SUPPLY 'Same as Total Supply' IF TOTAL AND CIRCULATING SUPPLY ARE EQUAL
     if (Math.round(json[0].csupply) === Math.round(json[0].tsupply)) {
       cryptoCirculatingSupply.innerHTML = '<p>Circulating Supply: <i>Same as Total Supply</i></p>';
     }
     else {
-      cryptoCirculatingSupply.textContent = (`Circulating Supply: ${Math.round(json[0].csupply)}`);
+      cryptoCirculatingSupply.textContent = (`Circulating Supply: ${(Math.round(json[0].csupply)).toLocaleString('en')} ${json[0].symbol}`);
     }
 
     //MAKES MAX SUPPLY 'N/A' IF CRYPTO HAS NO MAX SUPPLY
@@ -52,7 +52,7 @@ async function changeCrypto() {
       cryptoMaxSupply.innerHTML = ('<p>Max Supply: <i>N/A</i></p>');
     }
     else {
-      cryptoMaxSupply.textContent = (`Max Supply: ${Math.round(json[0].msupply)}`);
+      cryptoMaxSupply.textContent = (`Max Supply: ${(Math.round(json[0].msupply)).toLocaleString('en')} ${json[0].symbol}`);
     }
 
   } catch (error) {
