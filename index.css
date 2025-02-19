@@ -1,0 +1,131 @@
+/* General body and font styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #2c3e50;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+  color: #ecf0f1;
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+/* Header styling */
+h2 {
+  color: #34495e;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+/* Dropdown styling */
+select {
+  margin-top: 1rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  border: 1px solid #bdc3c7;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+/* Crypto information styling */
+h3#cryptoHeader {
+  color: #2c3e50;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+p {
+  color: #7f8c8d;
+  font-size: 1.1rem;
+  margin: 5px 0;
+  text-align: center;
+}
+
+/* Styling for specific changes and stats */
+#cryptoPriceUSD {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+#crypto1hChange,
+#crypto24hChange,
+#crypto7dChange {
+  font-weight: bold;
+}
+
+#crypto1hChange {
+  color: #e74c3c;
+}
+
+#crypto24hChange {
+  color: #f39c12;
+}
+
+#crypto7dChange {
+  color: #3498db;
+}
+
+#crypto24hVolume,
+#cryptoTotalSupply,
+#cryptoCirculatingSupply,
+#cryptoMaxSupply {
+  font-size: 1rem;
+  color: #34495e;
+}
+
+/* Adding a container around the crypto info */
+#cryptoInfoContainer {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 2rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Making the page responsive */
+@media (max-width: 768px) {
+  nav h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  select {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+
+  h3#cryptoHeader {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

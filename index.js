@@ -32,7 +32,7 @@ async function changeCrypto() {
     }
     const json = await response.json();
     cryptoHeader.textContent = (`(${json[0].symbol}) ${json[0].name}`);
-    cryptoPriceUSD.textContent = (`Current Price: ${json[0].price_usd}`);
+    cryptoPriceUSD.textContent = (`Current Price: $${json[0].price_usd}`);
     crypto1hChange.textContent = (`1 Hour Percent Change: ${json[0].percent_change_1h}%`);
     crypto24hChange.textContent = (`1 Day Percent Change: ${json[0].percent_change_24h}%`);
     crypto7dChange.textContent = (`1 Week Percent Change: ${json[0].percent_change_7d}%`);
