@@ -95,17 +95,6 @@ p {
   color: #34495e;
 }
 
-/* Adding a container around the crypto info */
-#cryptoInfoContainer {
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  margin-top: 2rem;
-  width: 90%;
-  max-width: 500px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 /* Making the page responsive */
 @media (max-width: 768px) {
   nav h1 {
