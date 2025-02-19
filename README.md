@@ -1,7 +1,7 @@
 # My-Crypto-Tracker
 My-Crypto-Tracker is a basic website for tracking prices and other data for select major cryptocurrencies.
 
-![Epic MS-PAINT drawing for My-Crypto-Tracker by Luke LaRock "Woah! much Bitcoin" "very crypto"](https://raw.githubusercontent.com/NoofleBot/My-Crypto-Tracker/refs/heads/main/README-image.png)
+![Epic MS-PAINT drawing for My-Crypto-Tracker by Luke LaRock "Woah! much Bitcoin" "very crypto"](https://raw.githubusercontent.com/NoofleBot/My-Crypto-Tracker/refs/heads/main/IMAGES/README-image.png)
 
 
 ## How to install & use:
@@ -15,4 +15,4 @@ My-Crypto-Tracker is a basic website for tracking prices and other data for sele
 **NOTE**: *At this time the site only grabs price data from either the moment you load the site or when you click a new token to track. To get up-to-date data refresh the page, or click another crypto from the dropdown and then return to the one you were on. A refresh button may be implemented in the future.*
 
 ## Tracker Example:
-![Screenshot of the tracker site providing data for Bitcoin](https://raw.githubusercontent.com/NoofleBot/My-Crypto-Tracker/refs/heads/main/README-example-image.png)
+![Screenshot of the tracker site providing data for Bitcoin](https://raw.githubusercontent.com/NoofleBot/My-Crypto-Tracker/refs/heads/main/IMAGES/README-example-image.png)
