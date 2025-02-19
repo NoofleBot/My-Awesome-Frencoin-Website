@@ -15,4 +15,4 @@ My-Crypto-Tracker is a basic website for tracking prices and other data for sele
 **NOTE**: *At this time the site only grabs price data from either the moment you load the site or when you click a new token to track. To get up-to-date data refresh the page, or click another crypto from the dropdown and then return to the one you were on. A refresh button may be implemented in the future.*
 
 ## Tracker Example:
-![Screenshot of the tracker site providing data for Bitcoin]()
+![Screenshot of the tracker site providing data for Bitcoin](https://raw.githubusercontent.com/NoofleBot/My-Crypto-Tracker/refs/heads/main/README-example-image.png)
